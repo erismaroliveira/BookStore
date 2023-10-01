@@ -9,7 +9,12 @@ namespace BookStore.Repositories
 {
     public class AuthorRepository : IAuthorRepository
     {
-        private readonly BookStoreDataContext _db = new BookStoreDataContext();
+        private readonly BookStoreDataContext _db;
+
+        public AuthorRepository(BookStoreDataContext context)
+        {
+            _db = context;
+        }
 
         public List<Autor> Get()
         {
