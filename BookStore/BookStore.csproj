@@ -143,6 +143,7 @@
     <Compile Include="Context\BookStoreDataContext.cs" />
     <Compile Include="Controllers\AuthorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Filters\LogActionFilter.cs" />
     <Compile Include="Global.asax.cs">
@@ -160,6 +161,7 @@
     <Compile Include="Repositories\AuthorRepository.cs" />
     <Compile Include="Repositories\Contracts\IAuthorRepository.cs" />
     <Compile Include="RoutesConstraints\ValuesConstraint.cs" />
+    <Compile Include="ViewModels\CreateBookViewModel.cs" />
     <Compile Include="ViewModels\VincularLivroAutorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +205,7 @@
     <Content Include="Views\Author\Create.cshtml" />
     <Content Include="Views\Author\Edit.cshtml" />
     <Content Include="Views\Author\Delete.cshtml" />
+    <Content Include="Views\Livro\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
